@@ -1,0 +1,64 @@
+.boardOfCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.boardOfCards .cardStandard {
+    flex-grow: 1;
+    margin: 20px;
+}
+
+.buttonContainer {
+    margin: 50px auto 50px auto;
+}
+
+.boardOfCards .cardLeft {
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+.boardOfCards .cardMiddle {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+.boardOfCards .cardRight {
+    animation-duration: 4s;
+    animation-name: slidein;
+}
+
+.cardStandard.cardFront {
+    margin-top: 20px;
+}
+
+@media all and (max-width: 800px) {
+    .cardStandard.cardFront {
+        margin-top: 20px;
+        width: calc(100vw - 40px);
+    }
+}
+
+
+@media all and (max-width: 800px) {
+    .boardOfCards {
+        width: 10px;
+    }
+
+    .boardOfCards .cardStandard {
+        flex-grow: 0;
+        flex-shrink: 1;
+    }
+}
+
+@keyframes slidein {
+    from {
+        opacity: 0;
+        transform: translatey(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translatey(0px);
+    }
+}

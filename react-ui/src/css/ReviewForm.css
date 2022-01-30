@@ -1,0 +1,20 @@
+.ReviewForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ReviewForm .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.ReviewForm .input {
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 5px;
+}

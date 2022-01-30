@@ -1,0 +1,48 @@
+.footerBox {
+    background: black;
+    padding: 16px 0;
+}
+
+.footerBox div,.footerBox p {
+    margin: 0 0;
+}
+
+.footerBox p {
+    font-size: 16px;
+    color: #808080;
+}
+
+.footerBox p a {
+    color: #808080;
+}
+
+.footerBox {
+    text-align: center;
+}
+
+.footerBox .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    width: 80vw;
+}
+
+.footerBox .text {
+    align-items: center;
+    flex-grow: 1;
+    width: 100px;
+}
+
+/* .textFong {
+    position: absolute;
+    bottom: 24px;
+    width: 200px;
+} */
+
+/* .linkFong {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+} */

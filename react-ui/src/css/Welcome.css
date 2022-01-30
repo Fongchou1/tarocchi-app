@@ -1,0 +1,104 @@
+.welcomeButton {
+    background: unset;
+    border-block-end: unset;
+    border-block-start: unset;
+    border-inline-end: unset;
+    border-inline-start: unset;
+}
+
+.WelcomeHolder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 80vw;
+}
+
+.Welcome {
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.Welcome p {
+    color: #fff;
+    font-size: 1rem;
+    position: absolute;
+    width: 100px;
+    left: -50px;
+}
+
+.appTitle {
+    animation-duration: 5s;
+    animation-name: welcomeTitle;
+    transform: translatex(-100px);
+}
+
+.separator {
+    opacity: 1;
+    animation-duration: 5s;
+    animation-name: welcomeSeparator;
+}
+
+.creator {
+    opacity: 1;
+    animation-duration: 5s;
+    animation-name: welcomeCreator;
+    transform: translatex(100px);
+}
+
+
+
+@keyframes welcomeTitle {
+    0% {
+        opacity: 0;
+        transform: translatey(50px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translatey(0px);
+    }
+
+    60%{
+        transform: translatex(0px)
+    }
+
+    100% {
+        transform: translatex(-100px)
+    }
+}
+
+@keyframes welcomeSeparator {
+    0% {
+        opacity: 0;
+        transform: translatex(-16px);
+    }
+
+    70% {
+        opacity: 0;
+        transform: translatex(-16px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translatex(0px)
+    }
+}
+
+@keyframes welcomeCreator {
+    0% {
+        opacity: 0;
+        transform: translatex(84px);
+    }
+
+    75% {
+        opacity: 0;
+        transform: translatex(84px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translatex(100px)
+    }
+}

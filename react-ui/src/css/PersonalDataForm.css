@@ -1,0 +1,20 @@
+.personalDataForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.personalDataForm .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.personalDataForm .input {
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 5px;
+}

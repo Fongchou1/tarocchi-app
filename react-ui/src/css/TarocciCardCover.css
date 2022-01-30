@@ -1,0 +1,22 @@
+.TarocciCardCover .root {
+    display: flex;
+    justify-content: center;
+    /* margin: 20px; */
+}
+
+.TarocciCardCover .cardCover {
+    max-width: 440px;
+    align-items: center;
+}
+
+.TarocciCardCover .media {
+    width: 220px;
+    height: 357px;
+}
+
+@media all and (max-width: 800px) {
+    .cardStandard .TarocciCardCover .media {
+        width: 20vw;
+        height: calc(20vw*(357/220));
+    }
+}

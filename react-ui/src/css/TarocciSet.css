@@ -1,0 +1,33 @@
+div, p {
+    margin: 0;
+}
+
+.TarocciSet.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.TarocciSet .row {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+}
+.TarocciSet .card {
+    margin: 20px;
+}
+
+.TarocciSet .buttonContainer {
+    margin-bottom: 80px;
+}
+
+.TarocciSet .gameLabel {
+    color: #fff;
+    margin: 32px auto 0px auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .TarocciSet .row {
+        flex-direction: column;
+    }
+}

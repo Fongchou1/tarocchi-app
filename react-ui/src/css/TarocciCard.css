@@ -1,0 +1,41 @@
+.container {
+    position: relative;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 0;
+}
+
+.switch-on {
+    transform: rotate3d(0, 1, 0, -1deg);
+    animation-duration: 2s;
+    animation-name: revealAnimation;
+}
+
+.switch-off {
+    transform: rotate3d(0, 1, 0, 90deg);
+    animation-duration: 1s;
+    animation-name: closeAnimation;
+}
+
+@keyframes revealAnimation {
+    0% {
+        transform: rotate3d(0, 1, 0, -90deg);
+    }
+    100%{
+        transform: rotate3d(0, 1, 0, -1deg);
+    }
+}
+
+@keyframes closeAnimation {
+    0% {
+        transform: rotate3d(0, 1, 0, 0);
+    }
+    100%{
+        display: none;
+        transform: rotate3d(0, 1, 0, 90deg);
+    }
+}
