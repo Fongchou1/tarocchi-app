@@ -6,8 +6,8 @@
     "node": ">=10.0"
   },
   "scripts": {
-    "start": "node server/index.js",
-    "build": "cd react-ui/ && npm install --legacy-peer-deps && npm run build"
+    "start": "node server/index.js --openssl-legacy-provider",
+    "build": "cd react-ui/ && npm install --legacy-peer-deps && npm run build --openssl-legacy-provider"
   },
   "cacheDirectories": [
     "node_modules",
