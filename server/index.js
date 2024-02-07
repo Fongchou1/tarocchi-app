@@ -1,11 +1,12 @@
 // eslint-disable-next-line
 const express = require('express');
 const path = require('path');
+require('dotenv').config();
 const cluster = require('cluster');
 const numCPUs = require('os').cpus().length;
 var Airtable = require('airtable');
 
-var base = new Airtable({apiKey: 'keyUVmbar6wiZjmrx'}).base('appoly8fibJ9qgCzX');
+var base = new Airtable({apiKey: process.env.AIRTABLE_ACCESS}).base(process.env.BASE);
 const isDev = process.env.NODE_ENV !== 'production';
 const PORT = process.env.PORT || 6000;
 
